@@ -9,7 +9,7 @@ export default class Description extends Component {
     }
 
     render() {
-        const { hero } = this.props.navigation.state.params
+        const { hero } = this.props.route.params
         return (
            <ScrollView>
                <Image 

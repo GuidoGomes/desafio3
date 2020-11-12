@@ -9,11 +9,14 @@ export default class Home extends React.PureComponent {
     static navigationOptions = {
         title: 'Heroes'
     }
-    
-    state = {
-        data: []
+
+    constructor(props){
+        super(props)
+        this.state = {
+            data: []
+        }
     }
-    
+
     async componentDidMount() {
         const timestamp = Number(new Date())
         const hash = md5.create()
